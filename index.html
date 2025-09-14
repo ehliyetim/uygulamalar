@@ -1,9 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-  <title>Merhaba Dünya</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uygulamamı İndir</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #74ABE2, #5563DE);
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+    }
+    .btn-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .store-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #fff;
+      color: #000;
+      padding: 15px 25px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .store-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
+    .store-btn img {
+      height: 28px;
+    }
+    .disabled {
+      background: #aaa;
+      color: #fff;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+    .disabled:hover {
+      transform: none;
+      box-shadow: none;
+    }
+  </style>
 </head>
 <body>
-  <h1>Merhaba! Bu benim GitHub Pages sitem 😊</h1>
+  <h1>Uygulamamı İndir</h1>
+  <div class="btn-container">
+    <!-- Google Play -->
+    <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.arliadem.driverapp&pcampaignid=web_share" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+      Google Play'den İndir
+    </a>
+    <!-- App Store (Yakında) -->
+    <div class="store-btn disabled">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Apple_logo_black.svg" alt="App Store">
+      App Store (Yakında)
+    </div>
+  </div>
 </body>
 </html>
