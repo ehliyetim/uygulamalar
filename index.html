@@ -4,6 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Uygulamamı İndir</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X49W9F3DS9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-X49W9F3DS9');
+  </script>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -65,14 +76,19 @@
   <h1>Uygulamamı İndir</h1>
   <div class="btn-container">
     <!-- Google Play -->
-    <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.arliadem.driverapp&pcampaignid=web_share" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
-      Google Play'den İndir
+    <a class="store-btn"
+       href="https://play.google.com/store/apps/details?id=com.arliadem.driverapp&pcampaignid=web_share"
+       target="_blank"
+       onclick="gtag('event', 'click', {'event_category':'button','event_label':'GooglePlay'});">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+       Google Play'den İndir
     </a>
+
     <!-- App Store (Yakında) -->
-    <div class="store-btn disabled">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Apple_logo_black.svg" alt="App Store">
-      App Store (Yakında)
+    <div class="store-btn disabled"
+         onclick="gtag('event', 'click', {'event_category':'button','event_label':'AppStore'});">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Apple_logo_black.svg" alt="App Store">
+       App Store (Yakında)
     </div>
   </div>
 </body>
