@@ -60,16 +60,6 @@
     .store-btn img {
       height: 28px;
     }
-    .disabled {
-      background: #aaa;
-      color: #fff;
-      cursor: not-allowed;
-      box-shadow: none;
-    }
-    .disabled:hover {
-      transform: none;
-      box-shadow: none;
-    }
   </style>
 </head>
 <body>
@@ -84,12 +74,14 @@
        Google Play'den İndir
     </a>
 
-    <!-- App Store (Yakında) -->
-    <div class="store-btn disabled"
-         onclick="gtag('event', 'click', {'event_category':'button','event_label':'AppStore'});">
+    <!-- App Store -->
+    <a class="store-btn"
+       href="https://apps.apple.com/tr/app/ehliyet-2025/id6752400611?l=tr"
+       target="_blank"
+       onclick="gtag('event', 'click', {'event_category':'button','event_label':'AppStore'});">
        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Apple_logo_black.svg" alt="App Store">
-       App Store (Yakında)
-    </div>
+       App Store'dan İndir
+    </a>
   </div>
 </body>
 </html>
