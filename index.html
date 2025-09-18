@@ -39,26 +39,14 @@
       flex-wrap: wrap;
       justify-content: center;
     }
-    .store-btn {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      background: #fff;
-      color: #000;
-      padding: 15px 25px;
-      border-radius: 12px;
-      font-size: 1rem;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    .store-btn img {
+      height: 40px;
       transition: transform 0.2s, box-shadow 0.2s;
+      border-radius: 8px;
     }
-    .store-btn:hover {
+    .store-btn img:hover {
       transform: translateY(-3px);
       box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-    }
-    .store-btn img {
-      height: 28px;
     }
   </style>
 </head>
@@ -71,7 +59,6 @@
        target="_blank"
        onclick="gtag('event', 'click', {'event_category':'button','event_label':'GooglePlay'});">
        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
-       Google Play'den İndir
     </a>
 
     <!-- App Store -->
@@ -79,8 +66,7 @@
        href="https://apps.apple.com/tr/app/ehliyet-2025/id6752400611?l=tr"
        target="_blank"
        onclick="gtag('event', 'click', {'event_category':'button','event_label':'AppStore'});">
-       <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Apple_logo_black.svg" alt="App Store">
-       App Store'dan İndir
+       <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
     </a>
   </div>
 </body>
